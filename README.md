@@ -1,0 +1,2 @@
+# textmining-example
+Pythonテキストマイニングサンプル
