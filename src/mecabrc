@@ -1,0 +1,3 @@
+
+dicdir = /var/lib/mecab/dic/ipadic-utf8
+userdic = /app/user.dic
