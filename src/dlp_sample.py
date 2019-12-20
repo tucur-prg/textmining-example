@@ -1,7 +1,6 @@
 
 # 前準備
-# pip install google-cloud-dlp
-# pip install python-dotenv
+# pip install -r requirements.txt
 # /.env に PROJECT_ID=XXX を設定
 # サービスアカウントのキーを /gcp.json に配置
 # export GOOGLE_APPLICATION_CREDENTIALS="/gcp.json"
