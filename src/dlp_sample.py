@@ -34,7 +34,11 @@ deidentify_config = {
                 'primitive_transformation': {
                     'character_mask_config': {
                         'masking_character': 'x',
-                        'number_to_mask': 20
+                        "characters_to_ignore":[
+                            {
+                                "characters_to_skip":".@"
+                            }
+                        ]
                     }
                 }
             }
