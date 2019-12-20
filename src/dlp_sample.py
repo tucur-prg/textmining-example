@@ -17,10 +17,15 @@ client = dlp_v2.DlpServiceClient()
 
 parent = client.project_path(os.environ.get('PROJECT_ID'))
 
-name = 'EMAIL_ADDRESS'
-info_types_elements = {'name' : name }
-info_types = [info_types_elements]
-inspect_config = {'info_types' : info_types}
+items = {
+    'value': 'My email is not example@example.com , aaa@bbb.com , xxxx@xxxxx.co.jp '
+}
+
+inspect_config = {
+    'info_types': [
+        {'name': 'EMAIL_ADDRESS'}
+    ]
+}
 
 deidentify_config = {
     'info_type_transformations': {
@@ -36,9 +41,6 @@ deidentify_config = {
         ]
     }
 }
-
-value = 'My email is not example@example.com , aaa@bbb.com , xxxx@xxxxx.co.jp '
-items = {'value' : value }
 
 response = client.deidentify_content(parent, deidentify_config,inspect_config, items)
 
