@@ -17,6 +17,7 @@ client = dlp_v2.DlpServiceClient()
 parent = client.project_path(os.environ.get('PROJECT_ID'))
 
 items = {
+    #'value': '私のメールアドレスは、example@example.comです。'
     'value': 'My email is not example@example.com , aaa@bbb.com , xxxx@xxxxx.co.jp '
 }
 

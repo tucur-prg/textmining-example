@@ -10,3 +10,5 @@ services:
       - ./src:/app
       - ./gcp.json:/gcp.json
       - ./gcp.env:/.env
+      - ./aws.config:/root/.aws/config
+      - ./aws.credentials:/root/.aws/credentials
