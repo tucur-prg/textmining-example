@@ -2,3 +2,4 @@ python-dotenv
 google-cloud-dlp
 awscli
 boto3
+ginza
