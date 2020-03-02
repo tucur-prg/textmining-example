@@ -1,5 +1,6 @@
 python-dotenv
 google-cloud-dlp
+google-cloud-speech
 awscli
 boto3
 ginza
